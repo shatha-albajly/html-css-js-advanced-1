@@ -131,6 +131,84 @@ footer img {
 
 /* footer-lists */
 .footer-lists {
+  background-color: var(--dark-grey);
+  padding: 2rem 0;
+  color: var(--white-color);
+}
+
+.nav__title {
+  font-size: 1rem;
+  color: var(--beige-color);
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.nav__item {
+  position: relative;
+
+  margin-left: 1rem;
+}
+
+.nav__item:before {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: var(--beige-color);
+  position: absolute;
+  top: 20px;
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+}
+
+.footer__nav {
+  display: flex;
+}
+
+.nav__ul a {
+  color: var(--beige-color);
+  text-decoration: none;
+}
+
+.footer__nav > * {
+  flex: 1;
+}
+
+form {
+  margin-bottom: 3rem;
+  background-color: var(--border-color);
+  padding: 1rem;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+}
+
+form input {
+  padding: 10px 10px;
+  border-radius: 3px;
+  margin-bottom: 0.3rem;
+  border: 0;
+  position: relative;
+}
+
+form button {
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: 0;
+}
+
+footer #icon {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat 13px center;
+
+  background-size: 15px;
+  background-color: var(--beige-color);
 }
 
 /* footer-copy-write */
@@ -139,13 +217,46 @@ footer img {
   justify-content: space-between;
   align-items: center;
   color: var(--gray-color);
+  padding: 2rem 0;
 }
+
 .payment-options {
   display: flex;
 }
+
 .payment-options img {
   margin-left: 1rem;
 }
-.copy-write {
-  padding: 3rem 0;
+
+@media screen and (max-width: 800px) {
+  .header-items {
+    flex-direction: column;
+  }
+  .search-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+  }
+  .logo {
+    margin-bottom: 3rem;
+  }
+  .search-section {
+    width: 90%;
+  }
+  .footer__nav {
+    flex-direction: column;
+  }
+  .nav__item {
+    padding-bottom: 2rem;
+  }
+  .footer-copy-write {
+    flex-direction: column;
+    height: 12rem;
+  }
+  .copy-write {
+    justify-content: center;
+  }
+  .payment-options {
+    justify-content: center;
+  }
 }
