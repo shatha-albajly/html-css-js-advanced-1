@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-    />
+    /> -->
 
     <title>E-library</title>
     <link rel="stylesheet" href="style.css" />
@@ -69,47 +69,93 @@
     </header>
     <!-- end header -->
 
-    <!-- main start -->
-    <main>
-      <div class="slider-container">
-        <div class="slide">
-          <img src="images/slider1.webp" alt="" />
-        </div>
-        <div class="slide">
-          <img src="images/slider2.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="images/slider3.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="images/slider4.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="images/slider5.webp" alt="" />
-        </div>
-        <div class="slide">
-          <img src="images/slider6.jpg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="images/slider6.jpg" alt="" />
-        </div>
-        <div class="circles">
-          <span class="circle active"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
-        </div>
-        <div class="btn-container">
-          <button type="button" class="prevBtn">prev</button>
-          <button type="button" class="nextBtn">next</button>
+    <!-- login and sign up section start -->
+    <section dir="rtl" class="login-signup">
+      <div class="right login">
+        <h1 class="login-title">تسجيل الدخول</h1>
+        <form id="login-form" class="login-form">
+          <div class="input-wrap">
+            <input
+              name="email"
+              type="email"
+              title="البريد الالكتروني أو رقم الجوال"
+            />
+            <label for="name">البريد الالكتروني أو رقم الجوال</label>
+          </div>
+          <div class="input-wrap">
+            <label for="password">كلمة السر</label>
+            <input type="password" name="password" />
+            <p class="forget">نسيت؟</p>
+          </div>
+          <button>تسجيل الدخول</button>
+        </form>
+
+        <div class="go-to-signup">
+          <p>ليس لديك حساب؟</p>
+          <p class="new-account-button">انشاء حساب جديد</p>
         </div>
       </div>
-    </main>
-    <!-- main end -->
+      <div class="left signup">
+        <h1 class="login-title">إنشاء حساب</h1>
+        <form id="signup-form" class="signup-form">
+          <div class="two-input">
+            <div class="input-wrap">
+              <input name="number" type="tel" />
+              <label for="name">رقم الجوال</label>
+            </div>
+            <div class="input-wrap">
+              <label for="">رمز البلد</label>
+              <input type="password" name="password" />
+            </div>
+          </div>
+          <p>سوف نرسل لك رمز التحقق عن طريق رسالة نصية</p>
 
+          <div class="input-wrap">
+            <label for="password">ارسال رمز التحقق</label>
+            <input type="password" name="password" />
+          </div>
+
+          <div class="input-wrap">
+            <label for="password">الاسم الاول</label>
+            <input type="password" name="password" />
+          </div>
+
+          <div class="input-wrap">
+            <label for="password">اسم العائله</label>
+            <input type="password" name="password" />
+          </div>
+
+          <div class="input-wrap">
+            <label for="password">البريد الالكتروني</label>
+            <input type="password" name="password" />
+          </div>
+
+          <div class="input-wrap">
+            <label for="password">تاكيد البريد الالكتروني</label>
+            <input type="password" name="password" />
+          </div>
+          <div class="input-wrap">
+            <label for="password">كلمة السر</label>
+            <input type="password" name="password" />
+          </div>
+
+          <div class="checkbox-div">
+            <span></span>
+            <input type="checkbox" disabled="disabled" />
+            <p>أوافق على الشروط والأحكام</p>
+          </div>
+          <div class="checkbox-div">
+            <span></span>
+
+            <input type="checkbox" disabled="disabled" />
+            <p>التسجيل للانضمام للنشرة البريدية</p>
+          </div>
+
+          <button>انشاء حساب</button>
+        </form>
+      </div>
+    </section>
+    <!-- login and sign up section start end -->
     <!-- footer end -->
     <footer>
       <div class="footer-lists">
@@ -278,6 +324,5 @@
         </div>
       </div>
     </footer>
-    <script src="scripts.js"></script>
   </body>
 </html>
