@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -20,6 +20,7 @@
   --blue-color: #2875c3;
   ---gray-line-color: #444;
   --footer-title: #a6a6a6;
+  --items-border: #f1f1f1;
 }
 
 body {
@@ -141,18 +142,40 @@ header input {
   height: auto;
 }
 /* login and sign up */
+
+.signup-model,
+.login-model {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 98vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  display: none;
+  top: 0;
+}
+.show-signup-model,
+.show-login-model {
+  color: var(--blue-color);
+  font-weight: 900;
+  font-size: 1rem;
+}
+
 .login-signup {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 5rem 0;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0;
 }
 /* login */
 .login {
   width: 40%;
+  background-color: var(--white-color);
+  padding: 1rem;
 }
 .signup {
   width: 40%;
+  background-color: var(--white-color);
+  padding: 3rem;
 }
 
 .login-title {
@@ -171,7 +194,6 @@ header input {
   border-radius: 3px;
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 3.5rem;
 }
 
 .input-wrap {
@@ -274,9 +296,14 @@ header input {
 /* main */
 /* slider */
 
+/* signup model */
+
+/* slider */
 .slider-container {
   width: 80vw;
   margin: 0 auto;
+  margin-bottom: 5rem;
+  margin-top: 2rem;
   height: 60vh;
   max-width: 80rem;
   position: relative;
@@ -360,6 +387,7 @@ header input {
   background-color: var(--white-color);
   border: #ccc 1px solid;
 }
+
 /* footer */
 footer {
   background-color: var(--beige-color);
